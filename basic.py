@@ -15,9 +15,10 @@ def add_version(data, filename='versions_hyd_host2.json'):
 repo = Repo('C://git practice//repo2')
 """origin = repo.remote(name="origin")
 origin.pull()"""
-repo_heads=repo.heads
+"""repo_heads=repo.heads
 repo_heads['main'].checkout()
-g.pull()
+g.pull()"""
+repo.git.checkout('main')
 #version=input()
 
 version = '21.9.0.47'
